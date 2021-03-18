@@ -1,0 +1,22 @@
+def on_pin_pressed_p2():
+    music.play_melody("A F E F D G E F ", 300)
+    music.play_melody("C5 G B A F A C5 B ", 300)
+    music.play_melody("E D G F B A C5 B ", 300)
+    music.play_melody("C5 A B G A F G E ", 300)
+    music.play_melody("E B C5 A B G A F ", 300)
+    music.play_tone(330, music.beat(BeatFraction.BREVE))
+input.on_pin_pressed(TouchPin.P2, on_pin_pressed_p2)
+
+def on_pin_pressed_p1():
+    music.play_melody("E D G F B A C5 B ", 450)
+    music.play_melody("A F E F D G E F ", 450)
+    music.play_melody("G B A G C5 B A B ", 450)
+    music.play_melody("B A G A G F A C5 ", 450)
+    music.play_melody("G F G A - F E D ", 450)
+    music.play_melody("E D G F B A C5 B ", 450)
+    music.play_melody("A F E F D G E F ", 450)
+    music.play_melody("G B A G C5 B A B ", 450)
+    music.play_melody("B A G A G F A C5 ", 450)
+    music.play_melody("G F G A - F E D ", 450)
+    music.play_tone(262, music.beat(BeatFraction.BREVE))
+input.on_pin_pressed(TouchPin.P1, on_pin_pressed_p1)
